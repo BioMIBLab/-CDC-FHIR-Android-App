@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Full-FHIR-Android-APP</string>
+    <string name="search_patients">Search-Patients</string>
+    <string name="enter_patient_name_here">Enter patient name here</string>
+    <string name="enter_patient_family_name_below">Enter Patient Family Name Below</string>
+    <string name="name">Name</string>
+    <string name="title_activity_pronoucing_death">PronoucingDeath</string>
+    <string-array name="deathPlaces">
+        <item>Death on arrival at hospital</item>
+        <item>Death at home</item>
+        <item>Death in hospice</item>
+        <item>Death in hospital</item>
+        <item>Death in hospital-based emergency department</item>
+        <item>Death in nursing home or long-term care facilities</item>
+    </string-array>
+</resources>

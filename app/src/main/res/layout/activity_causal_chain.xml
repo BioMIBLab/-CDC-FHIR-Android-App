@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CausalChainActivity">
+
+    <TextView
+        android:id="@+id/PatientBasicInfo_patientNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="30dp"
+        android:text="patient name" />
+
+    <Button
+        android:id="@+id/PatientBasicInfo_BasicInfoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PatientBasicInfo_patientNameTextView"
+        android:layout_marginTop="16dp"
+        android:textSize="10dp"
+        android:text="Basic Info" />
+
+    <Button
+        android:id="@+id/patientBasicInfo_PronouncingDeathButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/PatientBasicInfo_BasicInfoButton"
+        android:layout_toRightOf="@id/PatientBasicInfo_BasicInfoButton"
+        android:textSize="10dp"
+        android:text="Pronoucing Death" />
+
+    <Button
+        android:id="@+id/patientBasicInfo_CausalChainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/patientBasicInfo_PronouncingDeathButton"
+        android:layout_toRightOf="@id/patientBasicInfo_PronouncingDeathButton"
+        android:text="Causal Chain"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/patientBasicInfo_ReviewSummit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/patientBasicInfo_CausalChainButton"
+        android:layout_toRightOf="@id/patientBasicInfo_CausalChainButton"
+        android:text="Review/Summit"
+        android:textSize="10dp" />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/PatientBasicInfo_BasicInfoButton"
+        tools:context=".CausalChainActivity">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="20dp"
+                android:text="Recommended Causal Chain of Death. Feel free to make modifications."  />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="15dp"
+                android:text="Underlying Cause of Death" />
+
+            <Spinner
+                android:id="@+id/patientCausalChain_underlying_causeOfDeath_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="15dp"
+                android:text="Intermediate Cause of Death" />
+
+            <Spinner
+                android:id="@+id/patientCausalChain_immediate_1_causeOfDeath_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="15dp"
+                android:text="Intermediate Cause of Death" />
+
+            <Spinner
+                android:id="@+id/patientCausalChain_immediate_2_causeOfDeath_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="15dp"
+                android:text="Immediate Cause of Death" />
+
+            <Spinner
+                android:id="@+id/patientCausalChain_immediate_3_causeOfDeath_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="15dp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
+
+

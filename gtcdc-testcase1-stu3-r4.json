@@ -1,0 +1,355 @@
+{
+	"resourceType": "Bundle",
+	"meta": {
+		"lastUpdated": "2020-02-24T15:34:00.000-05:00"
+	},
+	"link": [{
+		"relation": "convertedFrom",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1839864/"
+	}],
+	"total": 11,
+	"entry": [{
+			"resource": {
+				"resourceType": "Patient",
+				"id": "gtp101",
+				"meta": {
+					"versionId": "1"
+				},
+				"identifier": [{
+					"use": "usual",
+					"system": "urn:oid:2.16.840.1.113883.4.642.2.30",
+					"value": "078-05-1120",
+					"assigner": {
+						"display": "U.S. Social Security Administration"
+					}
+				}],
+				"active": true,
+				"name": [{
+					"use": "official",
+					"family": [
+						"Hoover"
+					],
+					"given": [
+						"Herbert"
+					]
+				}],
+				"telecom": [{
+					"system": "phone",
+					"value": "8885551234",
+					"use": "home"
+				}],
+				"gender": "male",
+				"birthDate": "1990-07-04",
+				"deceasedDateTime": "2019-07-30T02:34:06.000-05:00",
+				"address": [{
+					"use": "home",
+					"line": [
+						"123 Main Street North"
+					],
+					"city": "Everytown",
+					"state": "USA",
+					"postalCode": "99999"
+				}]
+			},
+            "request": {
+                "method": "PUT",
+                "url": "Patient/gtp101"
+            }
+		},
+		{
+			"resource": {
+				"resourceType": "Condition",
+				"id": "gtc101",
+				"meta": {
+					"versionId": "1"
+				},
+				"subject": {
+					"reference": "Patient/gtp101"
+				},
+				"code": {
+					"coding": [{
+						"system": "http://hl7.org/fhir/sid/icd-10",
+						"code": "G35",
+						"display": "Multiple sclerosis"
+					}]
+				},
+				"clinicalStatus": "active",
+				"verificationStatus": "confirmed",
+				"onsetAge": {
+					"value": 26
+				}
+			},
+            "request": {
+                "method": "PUT",
+                "url": "Condition/gtc101"
+            }
+		},
+		{
+			"resource": {
+				"resourceType": "Condition",
+				"id": "gtc132",
+				"meta": {
+					"versionId": "1"
+				},
+				"subject": {
+					"reference": "Patient/gtp101"
+				},
+				"code": {
+					"coding": [{
+						"system": "http://hl7.org/fhir/sid/icd-10",
+						"code": "N31.9",
+						"display": "Neuromuscular dysfunction of bladder, unspecified"
+					}]
+				},
+				"clinicalStatus": "active",
+				"verificationStatus": "confirmed",
+				"onsetAge": {
+					"value": 27
+				}
+			},
+            "request": {
+                "method": "PUT",
+                "url": "Condition/gtc132"
+            }
+		},
+		{
+			"resource": {
+				"resourceType": "Condition",
+				"id": "gtc102",
+				"meta": {
+					"versionId": "1"
+				},
+				"subject": {
+					"reference": "Patient/gtp101"
+				},
+				"code": {
+					"coding": [{
+						"system": "http://hl7.org/fhir/sid/icd-10",
+						"code": "G82.21",
+						"display": "Parapalegia, complete"
+					}]
+				},
+				"clinicalStatus": "active",
+				"verificationStatus": "confirmed",
+				"onsetAge": {
+					"value": 28
+				}
+			},
+            "request": {
+                "method": "PUT",
+                "url": "Condition/gtc102"
+            }
+		},
+		{
+			"resource": {
+				"resourceType": "Condition",
+				"id": "gtc112",
+				"meta": {
+					"versionId": "1"
+				},
+				"subject": {
+					"reference": "Patient/gtp101"
+				},
+				"code": {
+					"coding": [{
+						"system": "http://hl7.org/fhir/sid/icd-10",
+						"code": "G82.22",
+						"display": "Parapalegia, incomplete"
+					}]
+				},
+				"clinicalStatus": "active",
+				"verificationStatus": "confirmed",
+				"onsetAge": {
+					"value": 27
+				}
+			},
+            "request": {
+                "method": "PUT",
+                "url": "Condition/gtc112"
+            }
+		},
+		{
+			"resource": {
+				"resourceType": "Condition",
+				"id": "gtc103",
+				"meta": {
+					"versionId": "1"
+				},
+				"subject": {
+					"reference": "Patient/gtp101"
+				},
+				"code": {
+					"coding": [{
+						"system": "http://hl7.org/fhir/sid/icd-10",
+						"code": "L89.45",
+						"display": "Pressure ulcer of contiguous site of back, buttock and hip, unstageable"
+					}]
+				},
+				"clinicalStatus": "active",
+				"verificationStatus": "confirmed",
+				"onsetDateTime": "2019-02-10T21:00:00.000-05:00"
+			},
+            "request": {
+                "method": "PUT",
+                "url": "Condition/gtc103"
+            }
+		},
+		{
+			"resource": {
+				"resourceType": "Condition",
+				"id": "gtc104",
+				"meta": {
+					"versionId": "1"
+				},
+				"subject": {
+					"reference": "Patient/gtp101"
+				},
+				"code": {
+					"coding": [{
+						"system": "http://hl7.org/fhir/sid/icd-10",
+						"code": "T83.511A",
+						"display": "Infection and inflammatory reaction due to indwelling urethral catheter, initial encounter"
+					}]
+				},
+				"clinicalStatus": "active",
+				"verificationStatus": "confirmed",
+				"onsetDateTime": "2019-07-27T21:00:00.000-05:00"
+			},
+            "request": {
+                "method": "PUT",
+                "url": "Condition/gtc104"
+            }
+		},
+		{
+			"resource": {
+				"resourceType": "Condition",
+				"id": "gtc114",
+				"meta": {
+					"versionId": "1"
+				},
+				"subject": {
+					"reference": "Patient/gtp101"
+				},
+				"code": {
+					"coding": [{
+						"system": "http://hl7.org/fhir/sid/icd-10",
+						"code": "N39.0",
+						"display": "Urinary tract infection, site not specified"
+					}]
+				},
+				"clinicalStatus": "active",
+				"verificationStatus": "confirmed",
+				"onsetDateTime": "2019-07-27T22:00:00.000-05:00"
+			},
+            "request": {
+                "method": "PUT",
+                "url": "Condition/gtc114"
+            }
+		},
+		{
+			"resource": {
+				"resourceType": "Condition",
+				"id": "gtc105",
+				"meta": {
+					"versionId": "1"
+				},
+				"subject": {
+					"reference": "Patient/gtp101"
+				},
+				"code": {
+					"coding": [{
+						"system": "http://hl7.org/fhir/sid/icd-10",
+						"code": "I95.9",
+						"display": "Hypotension, unspecified"
+					}]
+				},
+				"clinicalStatus": "active",
+				"verificationStatus": "confirmed",
+				"onsetDateTime": "2019-07-27T19:00:00.000-05:00"
+			},
+            "request": {
+                "method": "PUT",
+                "url": "Condition/gtc105"
+            }
+		},
+		{
+			"resource": {
+				"resourceType": "Condition",
+				"id": "gtc106",
+				"meta": {
+					"versionId": "1"
+				},
+				"subject": {
+					"reference": "Patient/gtp101"
+				},
+				"code": {
+					"coding": [{
+						"system": "http://hl7.org/fhir/sid/icd-10",
+						"code": "I46.9",
+						"display": "Cardiac arrest, cause unspecified"
+					}]
+				},
+				"clinicalStatus": "active",
+				"verificationStatus": "confirmed",
+				"onsetDateTime": "2019-07-30T01:00:00.000-05:00"
+			},
+            "request": {
+                "method": "PUT",
+                "url": "Condition/gtc106"
+            }
+		},
+		{
+			"resource": {
+				"resourceType": "Condition",
+				"id": "gtc107",
+				"meta": {
+					"versionId": "1"
+				},
+				"subject": {
+					"reference": "Patient/gtp101"
+				},
+				"code": {
+					"coding": [{
+						"system": "http://hl7.org/fhir/sid/icd-10",
+						"code": "R65.21",
+						"display": "Severe sepsis with septic shock"
+					}]
+				},
+				"clinicalStatus": "active",
+				"verificationStatus": "confirmed",
+				"onsetDateTime": "2019-07-29T00:00:00.000-05:00"
+			},
+            "request": {
+                "method": "PUT",
+                "url": "Condition/gtc107"
+            }
+		},
+        {
+			"resource": {
+                "resourceType" : "Observation",
+                "id" : "gto101",
+                "status" : "preliminary",
+                "code" : {
+                  "coding" : [{
+                    "system": "http://snomed.info/sct",
+                    "code": "716347009"
+                  }],
+                  "text" : "Autopsy performed"
+                },
+                "valueCodeableConcept" : {
+                    "coding" : [{
+                    "system": "urn:oid:2.16.840.1.114222.4.11.928",
+                    "code": "64100000"
+                  }]
+                },
+                "subject": {
+					"reference": "Patient/gtp101"
+				}
+              },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/gto101"
+            }
+		}
+	]
+}

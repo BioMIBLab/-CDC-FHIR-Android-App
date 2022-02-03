@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientBasicInfoActivity">
+
+    <TextView
+        android:id="@+id/PatientBasicInfo_patientNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="30dp"
+        android:text="patient name" />
+
+    <Button
+        android:id="@+id/PatientBasicInfo_BasicInfoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PatientBasicInfo_patientNameTextView"
+        android:layout_marginTop="16dp"
+        android:textSize="10dp"
+        android:text="Basic Info" />
+
+    <Button
+        android:id="@+id/patientBasicInfo_PronouncingDeathButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/PatientBasicInfo_BasicInfoButton"
+        android:layout_toRightOf="@id/PatientBasicInfo_BasicInfoButton"
+        android:textSize="10dp"
+        android:text="Pronoucing Death" />
+
+    <Button
+        android:id="@+id/patientBasicInfo_CausalChainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/patientBasicInfo_PronouncingDeathButton"
+        android:layout_toRightOf="@id/patientBasicInfo_PronouncingDeathButton"
+        android:text="Causal Chain"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/patientBasicInfo_ReviewSummit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/patientBasicInfo_CausalChainButton"
+        android:layout_toRightOf="@id/patientBasicInfo_CausalChainButton"
+        android:text="Review/Summit"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/patientBasicInfo_birthDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PatientBasicInfo_BasicInfoButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="15dp"
+        android:text="Birth Date" />
+
+    <TextView
+        android:id="@+id/patientBasicInfo_genderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/patientBasicInfo_birthDateTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Gender"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/patientBasicInfo_addressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/patientBasicInfo_genderTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Address"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/patientBasicInfo_deceasedBooleanTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/patientBasicInfo_addressTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Deceased?"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/patientBasicInfo_deceasedDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/patientBasicInfo_deceasedBooleanTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Deceased Date"
+        android:textSize="15dp" />
+</RelativeLayout>

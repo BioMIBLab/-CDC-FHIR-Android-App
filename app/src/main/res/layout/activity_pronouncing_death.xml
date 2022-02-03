@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PronouncingDeathActivity"
+    android:scrollbars="vertical">
+
+    <TextView
+        android:id="@+id/PatientBasicInfo_patientNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="30dp"
+        android:text="patient name" />
+
+    <Button
+        android:id="@+id/PatientBasicInfo_BasicInfoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PatientBasicInfo_patientNameTextView"
+        android:layout_marginTop="16dp"
+        android:textSize="10dp"
+        android:text="Basic Info" />
+
+    <Button
+        android:id="@+id/patientBasicInfo_PronouncingDeathButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/PatientBasicInfo_BasicInfoButton"
+        android:layout_toRightOf="@id/PatientBasicInfo_BasicInfoButton"
+        android:textSize="10dp"
+        android:text="pronouncing Death" />
+
+    <Button
+        android:id="@+id/patientBasicInfo_CausalChainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/patientBasicInfo_PronouncingDeathButton"
+        android:layout_toRightOf="@id/patientBasicInfo_PronouncingDeathButton"
+        android:text="Causal Chain"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/patientBasicInfo_ReviewSummit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/patientBasicInfo_CausalChainButton"
+        android:layout_toRightOf="@id/patientBasicInfo_CausalChainButton"
+        android:text="Review/Summit"
+        android:textSize="10dp" />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/PatientBasicInfo_BasicInfoButton"
+        tools:context=".pronouncingDeathActivity">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/patientpronouncingDeath_deathDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="mm/dd/yyyy"
+                android:text="Date of pronounced Death"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/patientpronouncingDeath_deathDate_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="15dp"
+                android:ems="10"
+                android:inputType="date" />
+
+            <TextView
+                android:id="@+id/patientpronouncingDeath_deathTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Time of pronounced Death"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/patientpronouncingDeath_deathTime_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="15dp"
+                android:ems="10"
+                android:hint="24 hour format"
+                android:inputType="time" />
+
+            <TextView
+                android:id="@+id/patientpronouncingDeath_deathPlaceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Place of death"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/patientpronouncingDeath_deathPlace_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/patientpronouncingDeath_name_address_placeOfDeathTextView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name and Address of Place of Death" />
+
+            <TextView
+                android:id="@+id/patientpronouncingDeath_name_placeOfDeathTextView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:" />
+
+            <EditText
+                android:id="@+id/patientpronouncingDeath_name_placeOfDeath_editText"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/patientpronouncingDeath_street_placeOfDeathTextView"
+                android:layout_below="@id/patientpronouncingDeath_name_placeOfDeathTextView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Street Address:" />
+
+            <EditText
+                android:id="@+id/patientpronouncingDeath_street_placeOfDeath_editText"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/patientpronouncingDeath_city_placeOfDeathTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="15dp"
+                android:text="City:"
+                />
+
+            <EditText
+                android:id="@+id/patientpronouncingDeath_city_placeOfDeath_editView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="15dp"
+                android:inputType="text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/patientpronouncingDeath_state_placeOfDeathTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="15dp"
+                android:text="State:"
+                />
+
+            <EditText
+                android:id="@+id/patientpronouncingDeath_state_placeOfDeath_editView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="15dp"
+                android:inputType="text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/patientpronouncingDeath_zip_placeOfDeathTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="15dp"
+                android:text="Zip Code:"
+                />
+
+            <EditText
+                android:id="@+id/patientpronouncingDeath_zip_placeOfDeath_editView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="15dp"
+                android:inputType="text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/patientpronouncingDeath_person_pronouncedDeathTextView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Person pronounced Death" />
+
+            <TextView
+                android:id="@+id/patientpronouncingDeath_sign_documentTextView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type your full name to sign this document:" />
+
+            <EditText
+                android:id="@+id/patientpronouncingDeath_sign_document_editText"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/patientpronouncingDeath_license_TextView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="License number:" />
+
+            <EditText
+                android:id="@+id/patientpronouncingDeath_license_editText"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
